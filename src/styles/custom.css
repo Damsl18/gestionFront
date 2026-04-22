@@ -1,0 +1,154 @@
+/* src/styles/custom.css */
+/* Classes utilitaires personnalisées */
+
+/* Gradients */
+.bg-venom-gradient {
+  background: linear-gradient(135deg, var(--venom-black) 0%, var(--venom-dark) 50%, var(--navy) 100%);
+}
+
+.bg-navy-gradient {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-light) 100%);
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, var(--gold-dark) 0%, var(--gold) 50%, var(--gold-light) 100%);
+}
+
+/* Neon glow effects */
+.neon-text {
+  color: var(--neon-green);
+  text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
+}
+
+.neon-border {
+  border: 1px solid var(--neon-green);
+  box-shadow: 0 0 10px rgba(0, 255, 136, 0.3);
+}
+
+.gold-text {
+  color: var(--gold);
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+}
+
+/* Glassmorphism cards */
+.glass-card {
+  background: rgba(32, 32, 43, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--venom-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--navy-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--neon-green-dim);
+}
+
+/* Table styling */
+.table-venom {
+  color: var(--text-primary);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.table-venom thead th {
+  background-color: var(--venom-light);
+  color: var(--gold);
+  font-weight: 600;
+  border-bottom: 2px solid var(--gold);
+}
+
+.table-venom tbody tr:hover {
+  background-color: rgba(0, 255, 136, 0.05);
+}
+
+/* Button overrides */
+.btn-neon {
+  background-color: var(--neon-green);
+  border-color: var(--neon-green);
+  color: var(--venom-black);
+  font-weight: 600;
+}
+
+.btn-neon:hover {
+  background-color: var(--neon-green-dim);
+  border-color: var(--neon-green-dim);
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
+}
+
+.btn-gold {
+  background-color: var(--gold);
+  border-color: var(--gold);
+  color: var(--venom-black);
+  font-weight: 600;
+}
+
+.btn-gold:hover {
+  background-color: var(--gold-light);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+/* Form styling */
+.form-venom {
+  background-color: var(--venom-light);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--text-primary);
+}
+
+.form-venom:focus {
+  background-color: var(--venom-light);
+  border-color: var(--neon-green);
+  box-shadow: 0 0 0 0.2rem rgba(0, 255, 136, 0.25);
+  color: var(--text-primary);
+}
+
+/* Sidebar specific */
+.sidebar-venom {
+  background: linear-gradient(180deg, var(--venom-dark) 0%, var(--navy) 100%);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-link-venom {
+  color: var(--text-secondary);
+  border-radius: 8px;
+  margin-bottom: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-link-venom:hover,
+.nav-link-venom.active {
+  background-color: rgba(0, 255, 136, 0.1);
+  color: var(--neon-green);
+  border-left: 3px solid var(--neon-green);
+}
+
+/* Status badges */
+.status-low {
+  background-color: rgba(220, 53, 69, 0.2);
+  color: #ff6b6b;
+  border: 1px solid rgba(220, 53, 69, 0.3);
+}
+
+.status-ok {
+  background-color: rgba(40, 167, 69, 0.2);
+  color: #51cf66;
+  border: 1px solid rgba(40, 167, 69, 0.3);
+}
+
+.status-warning {
+  background-color: rgba(255, 193, 7, 0.2);
+  color: #ffd43b;
+  border: 1px solid rgba(255, 193, 7, 0.3);
+}

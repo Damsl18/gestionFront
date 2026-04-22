@@ -1,0 +1,65 @@
+/* src/styles/variables.css */
+/* Variables du thème Venom Noir pour Bootstrap 5 */
+
+:root {
+  /* Couleurs de base */
+  --venom-black: #0a0a0f;
+  --venom-dark: #12121a;
+  --venom-light: #1a1a24;
+  --venom-card: #20202b;
+  
+  /* Neon accents */
+  --neon-green: #00ff88;
+  --neon-green-dim: #00cc6a;
+  --neon-blue: #00d4ff;
+  --neon-purple: #b347ff;
+  
+  /* Navy & Gold (existant) */
+  --navy: #1e3a5f;
+  --navy-light: #2d5a8a;
+  --gold: #ffd700;
+  --gold-light: #ffed4e;
+  --gold-dark: #ccac00;
+  
+  /* Status colors */
+  --success: #28a745;
+  --danger: #dc3545;
+  --warning: #ffc107;
+  --info: #17a2b8;
+  
+  /* Text colors */
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0b0;
+  --text-muted: #6c757d;
+  
+  /* Bootstrap overrides */
+  --bs-body-bg: var(--venom-black);
+  --bs-body-color: var(--text-primary);
+  --bs-primary: var(--neon-green);
+  --bs-secondary: var(--navy);
+  --bs-success: var(--success);
+  --bs-danger: var(--danger);
+  --bs-warning: var(--warning);
+  --bs-info: var(--info);
+  --bs-light: var(--venom-light);
+  --bs-dark: var(--venom-black);
+  
+  /* Component colors */
+  --bs-card-bg: var(--venom-card);
+  --bs-card-border-color: rgba(255, 255, 255, 0.1);
+  --bs-input-bg: var(--venom-light);
+  --bs-input-border-color: rgba(255, 255, 255, 0.2);
+  --bs-modal-bg: var(--venom-card);
+  --bs-dropdown-bg: var(--venom-card);
+  --bs-table-bg: transparent;
+  --bs-table-border-color: rgba(255, 255, 255, 0.1);
+  --bs-table-striped-bg: rgba(255, 255, 255, 0.05);
+  --bs-table-hover-bg: rgba(0, 255, 136, 0.1);
+}
+
+/* Dark mode (par défaut) */
+[data-bs-theme="dark"] {
+  --bs-body-bg: var(--venom-black);
+  --bs-body-color: var(--text-primary);
+  --bs-border-color: rgba(255, 255, 255, 0.1);
+}
